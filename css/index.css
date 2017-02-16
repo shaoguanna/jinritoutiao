@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;  box-sizing:border-box; color:#2d2d2d;}
+
+a{
+	color:#2d2d2d; text-decoration:none;
+}
+i,em{ font-style:normal;}
+b,strong,h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+ul li, ol li{ list-style:none;}
+img{ vertical-align:top;}
+.clearfix:after{
+	display:block;
+	content:"";
+	clear:both;
+	}
+.clearfix{ zoom:1;}
+/*信封*/
+.fix1-bei{ width:100%; height:100%; position:absolute; top:0; left:0; background:rgba(0,0,0,.3); display:none; z-index:3;}
+.fix1{width: 270px; height: 225px;  background: #fff;position:fixed;left: 50%;top: 50%;margin-top: -113px; margin-left: -135px;border-radius: 5px; text-align:center;}
+.fix1 img{ width:165px;}
+.fix1 .p1{    text-align: center;color: #a5a5a5;font-size: 17px;margin-top: 6px;margin-bottom: 24px;}
+.fix1 .btn{    margin-left: 25px;  width: 220px; background: #ff6762;text-align: center; line-height: 40px; margin-top: 5px;margin-bottom: 15px;
+    border-radius: 5px;text-shadow: 0 1px 1px #f0221c;color: #fff;font-size: 20px;}
+.fix1 a{ position:absolute; top:3px; right:3px; font-size:20px; color: #a5a5a5;}
+/*红包*/
+.fix2{    position: fixed; top: 50%; display: inline-block; width: 3.3rem;height: 4rem;bottom: .5rem;right: .46875rem;background:url(../img/hot.png);  background-size: cover; z-index: 1400;}
+.fix1-bei .hongbao{    width: 12.65625rem;height: 15.5625rem; top: 50%;left: 50%; position:fixed;    transform: translate(-50%,-50%);}
+.fix1-bei .hongbao img{ width:100%;}
+.fix1-bei .hongbao a{position:absolute; top:3px; left:3px; font-size:20px; color: #a5a5a5;}
+.fix3{ width:100%; height:46px; background:rgba(0,0,0,.4); position:fixed; bottom:0; left:0; z-index:200;}
+.fix3 .logo{ width:30px; height:30px; background:url(../img/search_icons.png) no-repeat; background-size:100%; margin-left:14px; margin-top:8px; float:left;}
+.fix3 .text{margin-top:8px;  float:left; margin-left:6px;}
+.fix3 .text p{ font-size:14px; color:#fff;}
+.fix3 .btn{
+	height:30px;
+    width: 80px;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 6px;
+    background: #ff424b;
+    color: #fff;
+    text-align: center; margin-top:8px; float:right; margin-right:40px; }
+.fix3 a{ position:absolute;top:8px; right:3px; font-size:30px; color: #a5a5a5;}
+
+.refresh{width:100%; text-align:center; overflow:hidden;height:0; overflow:hidden; transition:0.4s all;}
+.refresh span{ font-size:14px;}
+.wrap{height:100%; max-width:640px; margin:0 auto; }
+header{ width:100%;}
+header .header{ width:100%; height:44px; background:#d43d3d; position:relative; text-align:center;}
+.header h1{ height:22px; width:83px; background:url(../img/logo.png) no-repeat; display:inline-block; background-size:100%; margin-top:10px;}
+.header .rel{ width:30px; background:url(../img/refresh.png) no-repeat; background-size:60%; margin-top:12px; display:inline-block; height:22px;}
+.header .left{ width:44px; height:44px; background:url(../img/xbxi.png) no-repeat center; background-size:60%; position:absolute; top:0; left:0;}
+.header .right{ width:44px; height:44px; background:url(../img/search.png) no-repeat center; background-size:60%; position:absolute; top:0; right:0;}
+
+header .nav{ width:100%; height:36px; background:#f4f5f6; font-size:16px; position:relative;}
+.nav .add{ width:40px; height:36px; position:absolute; right:0; top:0; background:url(../img/add.png) no-repeat center; background-size:60%; background-color:#f4f5f6; z-index:3;}
+
+.nav1 { width:100%; overflow:hidden;}
+header .nav2{ white-space:nowrap; }
+header .nav2 a{ line-height:36px; padding:0 8px;}
+header .nav2 a.active{ color:#d43d3d;}
+
+.cont { padding:0 8px; width:100%; overflow:hidden; transition:0.4s all;}
+.cont1{ width:800%;}
+.cont .list{ width:12.5%; margin-left:8px;}
+.cont .list li{ padding:8px 0; border-bottom:1px solid #ede9ea;}
+.cont .list  h3{    color: #222;font-size: 19px; line-height: 21px; font-weight: 400; overflow: hidden;}
+.cont .list .img{ width:100%; margin:6px 0;}
+.cont .list .img img{ width:32%; float:left; margin-left:4px;}
+.cont .text{ font-size:12px;color: #999}
+.cont .list .left{ float:left; width:64%;}
+.cont .list .left h3{ margin-bottom:5px;}
+.cont .list  .img1{ float:right; width:32%;}
+.cont .list  .img1 img{ width:100%;}
+.cont .list1 li{ border:none; margin-bottom:25px;}
+.cont .list1 .video{ position:relative; margin-bottom:10px;}
+.cont .list1 img{ width:100%;}
+.cont .list1 .video p{ position: absolute; left:6px; top:6px; color:#fff; font-size:16px;}
+.cont .list1 .video-btn{display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: url(http://s3a.pstatp.com/growth/mobile_list/image/playicon_video@3x_dcf536ff888c86df29f147413a7158ca.png) no-repeat 50%;
+	background-size:16%;
+	}
+
+
+/*搜索页面*/
+.search1{ width:100%; height:40px; background:#d43d3d; position:relative; text-align:center; color:#fff; line-height:40px; font-size:24px; font-weight:bold;}
+.search1 a{ color:#fff; position: absolute; left:6px; top:0px; }
+.search2{width:100%; height:34px; background:rgba(0,0,0,.3);text-align:center; position:relative;}
+.search2 input{ border:none; outline:1px solid #FF9; width:96%; height:25px; margin-top:4px; padding-left:32px;}
+.search2 p{ width:20px; height:20px; background:url(../img/search_icons.png) no-repeat; background-size:100%; position:absolute; left:14px; top:6px;}
+.hot{padding:0 8px; margin-top:16px; text-align:center;}
+.hot a{ padding:0 6px; line-height:24px; font-size:18px; background:#ccc; display:inline-block; height:24px; margin-bottom:12px;  }
+
+/*添加栏目页面*/
+.del { margin-bottom:20px;}
+.del p{     color: #666;
+    font-size: 12px;
+    line-height: 2em;
+    padding: 0 10px;
+    background-color: #f5f5f5; margin-bottom:20px;}
+.del ul{ padding:0;}
+.del li{display: inline-block;width: 23%; margin:0;margin-bottom: 10px; }
+.del li a{     background-color: #fff;  border: 1px solid #ddd;
+    margin: 0 8px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2em;  display:block;}
+/*播放页面*/
+.video{ width:100%; border-bottom:1px solid #f1f1f1}
+.video video{ width:100%; }
+.download{    font-size: 18px;color: #2a90d7; padding: 9px 0; text-align: center;border: 1px solid #2a90d7;border-radius: 5px; width:95%; margin:10px auto;}
